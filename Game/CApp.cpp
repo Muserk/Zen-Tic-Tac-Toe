@@ -5,13 +5,11 @@ CApp::CApp(){
 	Surf_Test = NULL;
 	Running = true;
 
-	 }
+}
 
 
+int CApp::OnExecute(){
 
-
-int CApp::OnExecute()
-{
 	if(OnInit() == false)
 		return -1;
 
@@ -23,6 +21,7 @@ int CApp::OnExecute()
 		OnLoop();
 		OnRender();
 	}
+
 	OnCleanup();
 
 	return 0;

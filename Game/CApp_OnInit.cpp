@@ -1,7 +1,6 @@
 #include "CApp.h"
 
-bool CApp::OnInit()
-{
+bool CApp::OnInit(){
 
 	if(SDL_Init(SDL_INIT_EVERYTHING) < 0 )
 		return false;
@@ -14,7 +13,5 @@ bool CApp::OnInit()
 		return false;
 
 	return true;
-
-
 
 }
